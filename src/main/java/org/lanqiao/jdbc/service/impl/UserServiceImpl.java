@@ -34,11 +34,11 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User getById(int id) {
-        return null;
+        return userDao.getUserById(id);
     }
 
     @Override
     public List<User> getAll() {
-        return null;
+        return userDao.getUserList();
     }
 }
